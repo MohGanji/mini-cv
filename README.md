@@ -9,8 +9,11 @@ mini-cv allows you to write your resume once, and put everything in it. Then dep
 - [x] print resume
 - [x] make styles print-friendly, tags are ruined.
 - [x] release v1 containing my own resume.
-- [ ] add hobbies section.
-- [ ] add a section to resume (a form, submit button adds the section)
+- [ ] Add call to action and tutorial above skills section.
+- [ ] Add hobbies section.
+- [ ] Add "About" on nav that opens a pop up window explaining the project.
+- [ ] Clean up styles: max width to the resume, nav bar
+- [ ] Add a section to resume (a form, submit button adds the section)
 - [ ] Add an experience to a section [add items inline?]
 - [ ] remove a section from resume
 - [ ] autosuggest tags based on existing tags
