@@ -16,6 +16,8 @@ mini-cv allows you to write your resume once, and put everything in it. Then dep
 - [ ] Add a section to resume (a form, submit button adds the section)
 - [ ] Add an experience to a section [add items inline?]
 - [ ] remove a section from resume
+- [ ] allow removing a hiding a line from resume manually.
+- [ ] reduce font sizes for title and subtitles.
 - [ ] autosuggest tags based on existing tags
 - [ ] edit name and add and remove links
 - [ ] drag and move sections.
