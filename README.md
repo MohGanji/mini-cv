@@ -9,6 +9,7 @@ mini-cv allows you to write your resume once, and put everything in it. Then dep
 - [x] print resume
 - [x] make styles print-friendly, tags are ruined.
 - [x] release v1 containing my own resume.
+- [ ] Add contact (phone number and email)
 - [ ] Add call to action and tutorial above skills section.
 - [ ] Add hobbies section.
 - [ ] Add "About" on nav that opens a pop up window explaining the project.
