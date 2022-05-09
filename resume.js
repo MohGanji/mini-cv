@@ -3,7 +3,7 @@ var resume = {
     "links": [
         {
             "type": "github",
-            "text": "mohganji",
+            "text": "",
             "url": "https://github.com/MohGanji"
         },
         {
@@ -20,7 +20,17 @@ var resume = {
             "type": "website",
             "text": "",
             "url": "http://ganji.blog"
-        }
+        },
+        {
+            "type": "email",
+            "text": "mohganji97@gmail.com",
+            "url": "mailto:mohganji97@gmail.com",
+        },
+        {
+            "type": "phone",
+            "text": "+17789575657",
+            "url": "tel:+17789575657"
+        },
     ],
     "hobbies": [
         {
@@ -53,27 +63,27 @@ var resume = {
                     "items": [
                         {
                             "body": "Managed product release and launch of CPC push feature, which ended up generating over 30% of the total revenue of push ads service.",
-                            "tags": ["product-management", "project-organization", "communication"]
+                            "tags": ["product-management", "communication"]
                         },
                         {
                             "body": "Refactored push notification service; Designed and implemented a more maintainable and extensible architecture utilizing OOD and Design Patterns; This allowed us to scale the system from 1M to 100M daily push capacity, producing 20x more revenue.",
-                            "tags": ["refactoring", "software-testing", "design-patterns", "software-design"]
+                            "tags": ["refactoring", "software-testing", "design-patterns", "software-development"]
                         },
                         {
                             "body": "Developed and maintained 50+ APIs using Django Rest Framework; Improved average response time of admin APIs to around 75%.",
-                            "tags": ["python", "django", "software-development", "software-testing", "backend-development"]
+                            "tags": ["python", "django"]
                         },
                         {
                             "body": "Optimized push database(100M+ records, 20+ tables in PostgreSQL) by rewriting complex queries, improving indexing, using caching and in memory optimizations(on Redis) and setting up automated clustering, resulting in 80% average query time reduction.",
-                            "tags": ["django", "redis", "databases", "database-design", "SQL", "database-optimization"]
+                            "tags": ["redis", "databases", "SQL-databases"]
                         },
                         {
                             "body": "Created and maintained a dashboard of 20+ charts for debugging using ELK Stack.",
-                            "tags": ["ELK-stack", "log-management", "debugging"]
+                            "tags": ["data-visualization", "debugging"]
                         },
                         {
                             "body": "Actively engaged in hiring processes; Conducted interviews for 5 applicants, mentored 3 interns, reviewed 100+ resumes and 100+ coding tasks.",
-                            "tags": ["hiring", "code-review", "mentoring", "interviewing"]
+                            "tags": ["hiring", "code-review", "mentoring"]
                         }
                     ]
                 },
@@ -87,23 +97,23 @@ var resume = {
                     "items": [
                         {
                             "body": "Worked on server-side development of 2 mobile applications, Chizz(120k+ monthly active users) and Episode(20k+ users) using Node.js, Express.js, and Graphql in teams of 4~5.",
-                            "tags": ["teamwork", "node.js", "javascript", "graphql", "express.js", "backend-development"]
+                            "tags": ["teamwork", "node.js", "javascript", "graphql", "software-development"]
                         },
                         {
                             "body": "Developed admin panel, landing page, and web views for Episode and Chizz, using React.js, HTML/CSS, jQuery.",
-                            "tags": ["jquery", "html", "css", "javascript"]
+                            "tags": ["html", "css", "javascript"]
                         },
                         {
                             "body": "Designed and implemented database models & caching(30+ collections) using MongoDB, Mongoose and Redis.",
-                            "tags": ["mongodb", "mongoose", "redis", "databases", "database-design", "nosql-databases"]
+                            "tags": ["mongodb", "redis", "databases", "noSQL-databases"]
                         },
                         {
                             "body": "Wrote and maintained unit and integration tests for Chizz & Episode using Jest; Achieved 95%+ code coverage.",
-                            "tags": ["software-testing", "debugging", "test-coverage"]
+                            "tags": ["software-testing", "debugging"]
                         },
                         {
                             "body": "Dockerized and set up deployment automation for Episode using Docker Compose and Nginx on Linux servers.",
-                            "tags": ["docker", "bash-scripting", "nginx", "deployment-automation", "dev-ops", "linux-servers"]
+                            "tags": ["docker", "bash-scripting", "nginx", "deployment-automation", "linux-servers"]
                         },
                         {
                             "body": "Set up Metabase dashboards for data analysis; Wrote queries for various business KPIs such as ARPU, ARPPU, monthly active users, etc.",
@@ -127,13 +137,13 @@ var resume = {
                         {
                             "body": "Submitted a paper as first author titled \"Code Coverage Criteria for Asynchronous Applications\"",
                             "tags": [
-                                "research", "software-testing", "debugging", "javascript", "test-coverage"
+                                "research", "software-testing", "debugging", "javascript"
                             ]
                         },
                         {
                             "body": "Developed JScope using typescript and VSCode extension API. JScope is a VSCode extension to measure asynchronous coverage for JavaScript applications",
                             "tags": [
-                                "typescript", "javascript", "bash", "dynamic analysis"
+                                "typescript", "javascript", "bash-scripting", "dynamic analysis"
                             ]
                         },
                         {
@@ -142,7 +152,11 @@ var resume = {
                         },
                         {
                             "body": "TA for CMPT276: \"Intro to software engineering\" for two semesters. The course materials contained software architecture design, testing, design patterns, and a team project to develop a 2D arcade game using Java.",
-                            "tags": ["java", "design-patterns", "debugging", "software-design"]
+                            "tags": ["java", "design-patterns", "debugging", "software-development"]
+                        },
+                        {
+                            "body": "TA for CMPT120: \"Intro to programming\". An introductory course to learn programming using python.",
+                            "tags": ["python", "software-development"]
                         }
                     ]
                 },
@@ -156,15 +170,15 @@ var resume = {
                     "items": [
                         {
                             "body": "Implemented a distributed algorithm for \"Real-time verification and evaluation of algorithms efficiency in distributed actor based systems\" as my thesis using Java.",
-                            "tags": ["research", "java", "distributed"]
+                            "tags": ["research", "java", "distributed-systems"]
                         },
                         {
                             "body": "TA for \"Design and Analysis of Algorithms\" course for 5 semesters. Designed and graded projects and assignments.",
-                            "tags": ["algorithms", "data-structures", "python"]
+                            "tags": ["algorithms", "python"]
                         },
                         {
-                            "body": "TA for \"Design of programming languages and compilers\" course. ",
-                            "tags": ["user-study-design", "ux", "communication"]
+                            "body": "TA for \"Design of programming languages and compilers\" course. This course contained a project with ANTLR(based on Java) to write a parser and then a compiler for a new language.",
+                            "tags": ["software-development", "java"]
                         }
                     ]
                 }
@@ -197,7 +211,7 @@ var resume = {
                     "items": [
                         {
                             "body": "Revamped a panel for SFU CSIL lab admins to schedule in-lab testing using Node.js, Nginx and PostgreSQL.",
-                            "tags": ["javascript", "web-development", "node.js", "html", "css", "SQL", "databases"]
+                            "tags": ["javascript", "web-development", "node.js", "nginx", "html", "css", "SQL-databases", "databases"]
                         }
                     ]
                 },
@@ -211,7 +225,7 @@ var resume = {
                     "items": [
                         {
                             "body": "Developed a telegram bot using Node.js and MongoDB. Collected 5000+ test results.",
-                            "tags": ["javascript", "mongodb", "node.js", "nosql-databases", "databases"]
+                            "tags": ["javascript", "mongodb", "node.js", "noSQL-databases", "databases"]
                         }
                     ]
                 }

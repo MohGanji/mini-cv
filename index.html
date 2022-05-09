@@ -14,18 +14,24 @@
     <nav class="header">
         <button disabled title="Mini CV">mini-cv</button>
         <button onclick="printResume('resume')" title="Download This Resume as PDF">Download</button>
-        <!-- <button onclick="" title="Clear everything and start over">Clear</button> -->
+        <button onclick="openModal('about')" title="About mini-cv">About</button>
     </nav>
     <div id="resume" class="container">
         <div class="cv-header">
             <div class="cv-name">Jon Doe</div>
-            <div id="cv-links" class="cv-links">
-                <div class="cv-link">github</div>
-                <div class="cv-link">linkedin</div>
-            </div>
+            <div id="cv-links" class="cv-links"></div>
         </div>
         <div id="cv-skills" class="cv-skills">
-            <div class="cv-skill cv-skill-first">Skills: </div>
+            <div class="cv-skill cv-skill-first">
+              Skills:
+              <span class="tooltip noprint">
+                &nbsp?&nbsp
+                <span class="tooltiptext">Click on a skill to show or hide its relevant experiences.</span>
+              </span>
+              <span class="cv-skill clickable noprint" onclick="TagService.toggleAll(this)" title="Toggle all tags" style="font-weight: normal;">
+                all
+              </span>
+            </div>
         </div> 
         <div id="cv-sections" class="cv-sections">
         </div>
@@ -33,6 +39,27 @@
             <input type="text" name="cv-section-title" placeholder="Add new section...">
             <button type="submit" name="cv-section-add" onclick="addSection()">Add Section</button>
         </form> -->
+    </div>
+    <div id="about" class="modal-container noprint">
+      <div class="modal">
+        <font size="+1">
+          <h3>What is mini-cv?</h3>
+          <p>
+            If you have ever felt the frustration of customizing your resume
+            for every single job description, then mini-cv is for you. 
+            It allows you to customize your resume based on the skills you select.
+          </p>
+          <p>
+            With mini-cv, you write your resume once, and whenever you need to apply for a new job, 
+            you just filter out all the skills that are not related to that job description.
+          </p>
+          <h3>What you need to do:</h3>
+          <p>Step 1: Write your resume, putting down everything you ever did in your professional life.</p>
+          <p>Step 2: For every line item in your resume, add skill tags related to that line. Choose these skills wisely.</p>
+          <p>Step 3: Now based on each job description you see, filter all the skills and only keep the ones that are related.</p>
+          <p>Step 4: Click on "Download" and then select "save as PDF".</p>
+        </font>
+      </div>
     </div>
     
 

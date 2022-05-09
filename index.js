@@ -70,6 +70,7 @@ function getIcon(type) {
         'linkedin': 'fa-linkedin',
         'email': 'fa-at',
         'website': 'fa-link',
+        'phone': 'fa-phone',
     }[type]
 }
 
@@ -85,13 +86,13 @@ var DomCV = {
      */
     createCVLink: (link) => {
         // <a class="cv-link" onclick=url>
-        //     TODO: <span class="cv-link-icon"></span>
+        //     <i class="cv-link-icon"></i>
         //     text
         // </a> 
         let linkElem = document.createElement('a')
         linkElem.classList.add('cv-link')
         linkElem.href = link.url
-        let text = link.type //link.text ? link.text : link.type
+        let text = link.text ? link.text : link.type
         let icon = getIcon(link.type)
         let iconElem = DOMUtils.createIcon(icon, 'cv-link-icon') 
         linkElem.appendChild(iconElem)
@@ -273,12 +274,13 @@ var TagService = {
      */
     renderTags: (tags) => {
         let tagsList = Array.from(tags)
-        let firstTagElem = DomCV.createTagElement('Skills: ', { first: true })
         let tagElements = tagsList.map(DomCV.createTagElement)
         
         let tagsContainer = document.getElementById('cv-skills')
-        tagsContainer.innerHTML = ''
-        tagsContainer.appendChild(firstTagElem)
+        while(tagsContainer.children.length > 1) {
+            tagsContainer.removeChild(tagsContainer.firstChild.nextSibling)
+        }
+
         tagElements.forEach(tagElem => {
             tagsContainer.appendChild(tagElem)
         });
@@ -295,8 +297,28 @@ var TagService = {
         let itemsContainingTag = document.querySelectorAll(`.${tagClassName}`)
         itemsContainingTag?.forEach(item => {
             item.dispatchEvent(new Event(EVT_toggleTag))
+        }) 
+    },
+    toggleAll: (elem) => {
+        elem.classList.toggle('removed')
+        if(!elem.classList.contains('removed')) 
+            TagService.selectAll();
+        else 
+            TagService.deselectAll();
+    },
+    deselectAll: () => {
+        let skills = document.querySelectorAll('.cv-skill.clickable')
+        skills.forEach(skill => {
+            if(skill.classList.contains('removed')) return;
+            TagService.toggleSelect({target: skill})
         })
-        
+    },
+    selectAll: () => {
+        let skills = document.querySelectorAll('.cv-skill.clickable')
+        skills.forEach(skill => {
+            if(!skill.classList.contains('removed')) return;
+            TagService.toggleSelect({target: skill})
+        })
     }
 }
 
@@ -391,3 +413,23 @@ function validateForm(event) {
     let form = event.target
     console.log(form)
 }
+
+// MODAL
+function openModal(modalId) {
+    let modalContainer = document.getElementById(modalId)
+    modalContainer.classList.add('visible');
+}
+
+function outsideModalClick(e) {
+    e.target.classList.remove('visible');  
+}
+
+function insideModalClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+    return false;
+}
+document.querySelectorAll('.modal').forEach(modal => {modal.addEventListener('click', insideModalClick)})
+document.querySelectorAll('.modal-container').forEach(modal => {modal.addEventListener('click', outsideModalClick)})
+// END MODAL
