@@ -71,7 +71,7 @@ var resume = {
                         },
                         {
                             "body": "Developed and maintained 50+ APIs using Django Rest Framework; Improved average response time of admin APIs to around 75%.",
-                            "tags": ["python", "django"]
+                            "tags": ["python", "django", "git"]
                         },
                         {
                             "body": "Optimized push database(100M+ records, 20+ tables in PostgreSQL) by rewriting complex queries, improving indexing, using caching and in memory optimizations(on Redis) and setting up automated clustering, resulting in 80% average query time reduction.",
@@ -89,7 +89,7 @@ var resume = {
                 },
                 {
                     "title": "Pheebs - Mobile application startup company",
-                    "subtitle": "Full Stack Developer",
+                    "subtitle": "Full Stack Developer - Part-Time",
                     "role": "",
                     "start": "2017-09-01",
                     "end": "2019-12-01",
@@ -97,7 +97,7 @@ var resume = {
                     "items": [
                         {
                             "body": "Worked on server-side development of 2 mobile applications, Chizz(120k+ monthly active users) and Episode(20k+ users) using Node.js, Express.js, and Graphql in teams of 4~5.",
-                            "tags": ["teamwork", "node.js", "javascript", "graphql", "software-development"]
+                            "tags": ["teamwork", "node.js", "javascript", "graphql", "software-development", "git"]
                         },
                         {
                             "body": "Developed admin panel, landing page, and web views for Episode and Chizz, using React.js, HTML/CSS, jQuery.",
