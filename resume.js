@@ -91,8 +91,8 @@ var resume = {
                     "title": "Pheebs - Mobile application startup company",
                     "subtitle": "Full Stack Developer",
                     "role": "",
-                    "start": "2019-12-01",
-                    "end": "2020-12-01",
+                    "start": "2017-09-01",
+                    "end": "2019-12-01",
                     "location": "IR",
                     "items": [
                         {
