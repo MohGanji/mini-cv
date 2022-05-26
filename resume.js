@@ -62,7 +62,7 @@ var resume = {
                     "location": "IR",
                     "items": [
                         {
-                            "body": "Managed product release and launch of CPC push feature, which ended up generating over 30% of the total revenue of push ads service.",
+                            "body": "Managed product release and launch of CPC push feature; ended up generating over 30% of the total revenue of push ads service.",
                             "tags": ["product-management", "communication"]
                         },
                         {
@@ -70,11 +70,11 @@ var resume = {
                             "tags": ["refactoring", "software-testing", "design-patterns", "software-development"]
                         },
                         {
-                            "body": "Developed and maintained 50+ APIs using Django Rest Framework; Improved average response time of admin APIs to around 75%.",
+                            "body": "Developed and maintained 50+ APIs using Django Rest Framework; Improved average response time of admin APIs to ~75%.",
                             "tags": ["python", "django", "git"]
                         },
                         {
-                            "body": "Optimized push database(100M+ records, 20+ tables in PostgreSQL) by rewriting complex queries, improving indexing, using caching and in memory optimizations(on Redis) and setting up automated clustering, resulting in 80% average query time reduction.",
+                            "body": "Optimized push database(100M+ records, 20+ tables in PostgreSQL) by rewriting complex queries, improving indexing, using caching and in memory optimizations(on Redis) and setting up automated clustering, reducing average query time by 80%.",
                             "tags": ["redis", "databases", "SQL-databases"]
                         },
                         {
