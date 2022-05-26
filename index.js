@@ -29,7 +29,7 @@ var DOMUtils = {
     },
     createIcon: (iconClass, ...classes) => {
         let iconElem = document.createElement('i')
-        iconElem.classList.add('fa', iconClass, ...classes)
+        iconElem.classList.add('fa', iconClass, 'noprint', ...classes)
         return iconElem
     }
 }
