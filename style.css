@@ -395,8 +395,8 @@ button:hover {
     .cv-skill.removed {
         display: none;
     }
-    /* .cv-link-icon,
+    .cv-link-icon,
     .cv-link-icon::before {
         display: none;
-    } */
+    }
 }
