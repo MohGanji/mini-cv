@@ -28,3 +28,6 @@ With mini-cv, you write your resume once, and whenever you need to apply for a n
 - [ ] drag and move exps.
 - [ ] drag and move items
 - [ ] save and retrieve from local storage
+- [ ] fit line length with the printed version.
+- [ ] show estimate(or exact) number of pages in the print.
+- [ ] show a warning sign and suggest breaking down a line in resume if there are >4 tags.
